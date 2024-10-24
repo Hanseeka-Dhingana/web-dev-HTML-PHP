@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+    
+     <link rel="stylesheet" href="landingPage.css"> 
+    
+      <script src= "landingPag.js"></script>
+  
+</head>
+<body>
+    <div class="upper-nav">
+
+        <div class="left">
+           <div class="address">
+              <span class="material-symbols-outlined">location_on</span> &nbsp;
+              <p>Lahore, Punjab &nbsp; &nbsp; | </p>
+           </div>
+
+           <div class="number">
+              <span class="material-symbols-outlined">call</span> &nbsp;
+              <p>0315 4232117 &nbsp; &nbsp; | </p>
+           </div>
+
+           <div class="accounts">
+               <a href="https://facebook.com"><img src="images/facebook.png" alt="facebook"></a>&nbsp;
+               <a href="https://twitter.com"><img src="images/twitter.png" alt="facebook"></a>&nbsp;
+               <a href="https://instagram.com"><img src="images/instagram.png" alt="facebook"></a>
+           </div>
+        </div>
+
+        <div class="right">
+            <div class = "Sign In">
+                <p>SIGN IN &nbsp; &nbsp; |</p>
+            </div>
+            <div class="register">
+                <p>REGISTER &nbsp; &nbsp; |</p>
+            </div>
+            <div class="language">
+                <p>EN</p>
+                <img src="images/americaFlag.png" alt="americaFlag">
+            </div>
+        </div>
+    </div>
+   
+    <div class="lower-nav">
+        <div class="img">
+            <h2>CLASSIC CAR</h2>
+        </div>
+
+        <div class="nav">
+           <ul>
+              <li><a href="">Home</a></li> &nbsp; &nbsp; &nbsp; &nbsp;
+              <div class="pages-div">
+              <li><a href="">Pages  <span class="material-symbols-outlined">arrow_drop_down</span></i></a>
+                  <div class="dropdown-pages">
+                       <a href="">Page 1</a>
+                       <a href="">Page 2</a>
+                       <a href="">page 3</a>
+                   </div>
+              </li> 
+             </div>&nbsp; &nbsp;&nbsp; &nbsp;
+              <li><a href="">About</a></li> &nbsp; &nbsp;&nbsp; &nbsp;
+              <li><a href="">Best offers</a></li> &nbsp; &nbsp;&nbsp; &nbsp;
+              <li><a href="">Blog</a></li> &nbsp; &nbsp;&nbsp; &nbsp;
+              <li><a href="">contact</a></li>
+           </ul>
+        </div>
+    </div>
+   
+    <div class="landing">
+
+        <img id = "carChange" src="images/Acura1.jpg" alt="imge">
+        <span id = "leftBtn" class="material-symbols-outlined" onclick="prevImage()"> arrow_back_ios_new </span>
+
+        <span id= "rightBtn" class="material-symbols-outlined" onclick="nextImage()">arrow_forward_ios </span>     
+            
+        <div class="text">
+            <h3>| Find Your Dream Car |</h3><br>
+            <h2 id = "Model">Acura TLX</h2><br>
+            <h2>MODEL 2024 </h2><br>
+
+            <button type="button" id="details">SEE DETAILS</button>
+            <button type="button"  id = "arrow">
+                <a href="https://google.com"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg></a>
+            </button>
+        </div>
+
+        <div class="searchVehicle">
+
+            <div class="select">
+            <select name="Make" id="Make">
+                <option value="Make">Make</option>
+                <option value="Ferrari" onclick="FerrariModel()">Ferrari</option>
+                <option value="BMW">BMW</option>
+                <option value="Acura">Acura</option>
+                <option value="Audi">Audi</option>
+                <option value="Lamborghini">Lamborghini</option>
+            </select>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <select name="Model" id="Model">
+                <option value="Model">Model</option>
+                <option value="A"></option>
+                <option value="B"></option>
+
+            </select>
+            </div>
+
+            <div class="slidecontainer">
+                <label for="myRange">PRICE RANGE</label>
+                <input type="range" min="1,00,000" max="5,00,000" value="3,00,000" class="slider" id="myRange">
+                
+                <p>$500  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                $<span id = "value"></span></p>
+            </div>
+        </div>
+
+           
+       
+    </div>
+
+    <div class="home">
+    
+    
+    </div>
+
+
+</body>
+</html>
